@@ -2,7 +2,7 @@
 
 #include <vector>
 
-int MOONG::VERSION::Version::Compare(std::string param_version1, std::string param_version2, std::string delimiters/* = ".,"*/)
+int MOONG::Version::Compare(std::string param_version1, std::string param_version2, std::string delimiters/* = ".,"*/)
 {
 	std::vector<int> version1;
 	std::vector<int> version2;
