@@ -20,5 +20,9 @@ int main(void)
 		std::cout << "version1이 version2보다 큰 경우." << std::endl;
 	}
 
+	std::cout << std::endl;
+
+	std::cout << "file version[" << MOONG::Version::GetFileVersion().c_str() << "]" << std::endl;
+
 	return 0;
 }

@@ -2,6 +2,9 @@
 
 #include <vector>
 
+// https://github.com/MoongStory/FileInfo
+#include "../../FileInfo/FileInfo/FileInfo.h"
+
 int MOONG::Version::Compare(std::string param_version1, std::string param_version2, std::string delimiters/* = ".,"*/)
 {
 	std::vector<int> version1;
@@ -92,4 +95,9 @@ int MOONG::Version::Compare(std::string param_version1, std::string param_versio
 	}
 
 	return 0;
+}
+
+const std::string MOONG::Version::GetFileVersion(const std::string file_path/* = ""*/)
+{
+	return MOONG::FileInfo::GetFileVersion(file_path);
 }
