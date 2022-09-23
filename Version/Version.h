@@ -1,7 +1,7 @@
 // https://github.com/MoongStory/Version
 
 #if _MSC_VER > 1000
-#pragma once
+	#pragma once
 #endif
 
 #ifndef _VERSION_H_
