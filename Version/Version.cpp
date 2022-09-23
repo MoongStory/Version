@@ -1,9 +1,9 @@
 #include "Version.h"
 
-#include <vector>
-
 // https://github.com/MoongStory/FileInfo
 #include "../../FileInfo/FileInfo/FileInfo.h"
+
+#include <vector>
 
 int MOONG::Version::Compare(std::string param_version1, std::string param_version2, std::string delimiters/* = ".,"*/)
 {
