@@ -14,8 +14,10 @@ int MOONG::Version::Compare(std::string param_version1, std::string param_versio
 
 	version_temp = MOONG::StringTool::split(param_version1, delimiters);
 
+	size_t i = 0;
+
 	std::vector<int> version1;
-	for (size_t i = 0; i < version_temp.size(); i++)
+	for (i = 0; i < version_temp.size(); i++)
 	{
 		version1.push_back(MOONG::ConvertDataType::string_to_integer(version_temp.at(i)));
 	}
@@ -23,12 +25,12 @@ int MOONG::Version::Compare(std::string param_version1, std::string param_versio
 	version_temp = MOONG::StringTool::split(param_version2, delimiters);
 
 	std::vector<int> version2;
-	for (size_t i = 0; i < version_temp.size(); i++)
+	for (i = 0; i < version_temp.size(); i++)
 	{
 		version2.push_back(MOONG::ConvertDataType::string_to_integer(version_temp.at(i)));
 	}
 
-	size_t i = 0;
+	i = 0;
 	while (true)
 	{
 		if (version1.size() > i && version2.size() > i)
