@@ -1,6 +1,6 @@
 #include "Version.h"
 
-#include "../../FileInfo/FileInfo/FileInfo.h"
+#include "../../FileInformation/FileInformation/FileInformation.h"
 
 #include "../../ConvertDataType/ConvertDataType/ConvertDataType.h"
 
@@ -68,5 +68,5 @@ int MOONG::Version::Compare(std::string param_version1, std::string param_versio
 
 const std::string MOONG::Version::GetFileVersion(const std::string file_path/* = ""*/)
 {
-	return MOONG::FileInfo::GetFileVersion(file_path);
+	return MOONG::FileInformation::get_version(file_path);
 }
