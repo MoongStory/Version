@@ -8,7 +8,7 @@
 
 #include <vector>
 
-int MOONG::Version::Compare(std::string param_version1, std::string param_version2, std::string delimiters/* = ".,"*/)
+int MOONG::Version::compare(std::string param_version1, std::string param_version2, std::string delimiters/* = ".,"*/)
 {
 	std::vector<std::string> version_temp;
 
@@ -66,7 +66,7 @@ int MOONG::Version::Compare(std::string param_version1, std::string param_versio
 	return 0;
 }
 
-const std::string MOONG::Version::GetFileVersion(const std::string file_path/* = ""*/)
+const std::string MOONG::Version::get_file_version(const std::string file_path/* = ""*/)
 {
 	return MOONG::FileInformation::get_version(file_path);
 }

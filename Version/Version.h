@@ -53,8 +53,8 @@ namespace MOONG
 		//			version1이 version2와 같은 경우.
 		//		-1
 		//			version2가 version1보다 큰 경우.
-		static int Compare(std::string param_version1, std::string param_version2, std::string delimiters = ".,");
-		static const std::string GetFileVersion(const std::string file_path = "");
+		static int compare(std::string param_version1, std::string param_version2, std::string delimiters = ".,");
+		static const std::string get_file_version(const std::string file_path = "");
 	protected:
 	private:
 	};
